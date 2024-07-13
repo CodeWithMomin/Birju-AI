@@ -8,7 +8,7 @@ async function genrateAnswer()
 {
   setanswer("loading");
   const response=await axios({
-    url:"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyBs1GLNuLlL1vyo7wk1SX_zErdwdpGwM50",
+    url:import.meta.env.REACT_APP_API_KEY,
     method:'post',
     data:{"contents":[{"parts":[{"text":question}]}]}
   })
