@@ -8,10 +8,7 @@ async function genrateAnswer()
 {
   setanswer("loading");
   const response=await axios({
-<<<<<<< HEAD
     url:import.meta.env.REACT_APP_API_KEY,
-=======
->>>>>>> 735a338a7cc7de3d9c1e33afd06fb629958aba13
     method:'post',
     data:{"contents":[{"parts":[{"text":question}]}]}
   })
